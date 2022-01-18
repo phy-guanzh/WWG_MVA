@@ -1,0 +1,11 @@
+-f root://cmsxrootd.fnal.gov//store/data/Run2018D/EGamma/NANOAOD/UL2018_MiniAODv2_NanoAODv9-v3/230000/07C84FF0-5281-6A44-8018-00B51DECFDDC.root -y 2018 -d -e D
+mode:  local
+year:  2018
+dataset_name:  root://cmsxrootd.fnal.gov//store/data/Run2018D/EGamma/NANOAOD/UL2018_MiniAODv2_NanoAODv9-v3/230000/07C84FF0-5281-6A44-8018-00B51DECFDDC.root
+data_era D
+JEC : Autumn18_V19_MC	 JER : Autumn18_V7b_MC
+MET branch : PuppiMET
+JEC : Autumn18_RunD_V19_DATA	 JER : Autumn18_V7b_MC
+MET branch : PuppiMET
+Will write selected trees to .
+Loading jet energy scale (JES) uncertainties from file '/pool/condor/dir_99652/tmp/tmplwvo_M/Autumn18_RunD_V19_DATA_Uncertainty_AK4PFchs.txt'

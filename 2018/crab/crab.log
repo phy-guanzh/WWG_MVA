@@ -1905,3 +1905,61 @@ DEBUG 2021-11-25 06:35:38.292 UTC: 	 CRAB Client version: v3.210825
 DEBUG 2021-11-25 06:35:38.292 UTC: 	 Running on: Linux lxplus7108.cern.ch 3.10.0-1160.45.1.el7.x86_64 #1 SMP Wed Oct 13 17:20:51 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
 DEBUG 2021-11-25 06:35:38.292 UTC: 	 Executing command: 'submit'
 DEBUG 2021-11-25 06:35:38.292 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+DEBUG 2021-12-09 06:29:42.747 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2021-12-09 06:29:42.747 UTC: 	 Running on: Linux lxplus721.cern.ch 3.10.0-1160.45.1.el7.x86_64 #1 SMP Wed Oct 13 17:20:51 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2021-12-09 06:29:42.747 UTC: 	 Executing command: 'submit'
+DEBUG 2021-12-09 06:29:42.747 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2021-12-09 06:29:42.748 UTC: 	 Will use CRAB configuration file crabcode_2018/EGamma_Run2018D_cfg.py
+DEBUG 2021-12-09 06:29:42.748 UTC: 	 Loading CRAB configuration file.
+ERROR 2021-12-09 06:29:42.794 UTC: 	 Error while loading CRAB configuration:
+unexpected indent (EGamma_Run2018D_cfg.py, line 21)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2021-12-09 06:29:42.794 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.00/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.00/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.00/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.00/lib/CRABClient/Commands/SubCommand.py", line 89, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+unexpected indent (EGamma_Run2018D_cfg.py, line 21)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2021-12-09 06:29:42.844 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_20/src/PhysicsTools/NanoAODTools/WWG/2018/crab/crab.log
+DEBUG 2021-12-09 06:29:43.155 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2021-12-09 06:29:43.155 UTC: 	 Running on: Linux lxplus721.cern.ch 3.10.0-1160.45.1.el7.x86_64 #1 SMP Wed Oct 13 17:20:51 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2021-12-09 06:29:43.155 UTC: 	 Executing command: 'submit'
+DEBUG 2021-12-09 06:29:43.155 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2021-12-09 06:29:43.156 UTC: 	 Will use CRAB configuration file crabcode_2018/SingleMuon_Run2018D_cfg.py
+DEBUG 2021-12-09 06:29:43.156 UTC: 	 Loading CRAB configuration file.
+ERROR 2021-12-09 06:29:43.198 UTC: 	 Error while loading CRAB configuration:
+unexpected indent (SingleMuon_Run2018D_cfg.py, line 21)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2021-12-09 06:29:43.198 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.00/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.00/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.00/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.00/lib/CRABClient/Commands/SubCommand.py", line 89, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+unexpected indent (SingleMuon_Run2018D_cfg.py, line 21)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2021-12-09 06:29:43.199 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_20/src/PhysicsTools/NanoAODTools/WWG/2018/crab/crab.log

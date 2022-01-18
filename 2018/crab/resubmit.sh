@@ -5,7 +5,7 @@ crab resubmit -d crab2018/crab_EGamma_Run2018D
 #crab resubmit -d crab2018/crab_SingleMuon_Run2018A
 #crab resubmit -d crab2018/crab_SingleMuon_Run2018B
 #crab resubmit -d crab2018/crab_SingleMuon_Run2018C
-crab resubmit -d crab2018/crab_SingleMuon_Run2018D
+#crab resubmit -d crab2018/crab_SingleMuon_Run2018D
 #crab resubmit -d crab2018/crab_MuonEG_Run2018A
 #crab resubmit -d crab2018/crab_MuonEG_Run2018B
 #crab resubmit -d crab2018/crab_MuonEG_Run2018C
@@ -20,6 +20,6 @@ crab resubmit -d crab2018/crab_SingleMuon_Run2018D
 #crab resubmit -d crab2018/crab_ZZ_TuneCP5_13TeV-pythia8_2018
 #crab resubmit -d crab2018/crab_tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pythia8_2018
 #crab resubmit -d crab2018/crab_TGJets_TuneCP5_13TeV-amcatnlo-madspin-pythia8_2018
-crab resubmit -d crab2018/crab_DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8_2018
-crab resubmit -d crab2018/crab_TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_2018
+#crab resubmit -d crab2018/crab_DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8_2018
+#crab resubmit -d crab2018/crab_TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_2018
 #crab resubmit -d crab2018/crab_WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8_2018

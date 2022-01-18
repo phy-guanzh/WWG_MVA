@@ -1,0 +1,2 @@
+usage: WWG_postproc.py [-h] [-f INFILE] [-y YEAR] [-m MODE] [-d] [-e ERA]
+WWG_postproc.py: error: argument -f: expected one argument
