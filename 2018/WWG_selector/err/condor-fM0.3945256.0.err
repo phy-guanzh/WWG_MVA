@@ -1,7 +1,0 @@
-Error in <TNetXNGFile::Open>: [FATAL] Redirect limit has been reached
-Traceback (most recent call last):
-  File "WWG_postproc.py", line 111, in <module>
-    p.run()
-  File "/afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_20/python/PhysicsTools/NanoAODTools/postprocessing/framework/postprocessor.py", line 163, in run
-    inTree = inFile.Get("Events")
-ReferenceError: attempt to access a null-pointer
