@@ -35,8 +35,8 @@ if args.year=='2016':
    jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear=2016,runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=True)
 
 if args.year=='2017':
-   jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear=2017,runPeriod="B",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=True)
-   jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear=2017,runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=True)
+   jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear=2017,runPeriod="B",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="METFixEE2017",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=True)
+   jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear=2017,runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="METFixEE2017",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=True)
 
 if args.year=='2018':
    jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear=2018,runPeriod="A",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=True,splitJER=True)
