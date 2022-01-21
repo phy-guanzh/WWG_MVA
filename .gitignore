@@ -1,0 +1,16 @@
+__init__.py
+*.pyc
+.*.swp
+.#*
+#*#
+*~
+*.root
+*tar*
+*zip*
+*tgz*
+.__nfs*
+.__afs*
+build
+*.d
+*.so
+*.pcm

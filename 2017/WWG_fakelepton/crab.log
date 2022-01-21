@@ -1,0 +1,85 @@
+DEBUG 2021-08-28 15:29:21.623 UTC: 	 CRAB Client version: v3.210825
+DEBUG 2021-08-28 15:29:21.624 UTC: 	 Running on: Linux lxplus728.cern.ch 3.10.0-1160.36.2.el7.x86_64 #1 SMP Wed Jul 21 11:57:15 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2021-08-28 15:29:21.624 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2021-08-28 15:29:21.624 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+DEBUG 2021-08-28 15:29:21.633 UTC: 	 Checking credentials
+DEBUG 2021-08-28 15:29:21.634 UTC: 	 Found proxy file /tmp/x509up_u110046
+DEBUG 2021-08-28 15:29:21.634 UTC: 	 Getting proxy life time left
+DEBUG 2021-08-28 15:29:22.443 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u110046 -timeleft
+ output : 597944
+
+ error: 
+ retcode : 0
+DEBUG 2021-08-28 15:29:23.150 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u110046 -actimeleft
+ output : 597943
+
+ error: 
+ retcode : 0
+DEBUG 2021-08-28 15:29:23.150 UTC: 	 Proxy lifetime 597944 secs is different from voms extension lifetime 597943 secs for proxy: /tmp/x509up_u110046
+DEBUG 2021-08-28 15:29:23.150 UTC: 	 Proxy valid for 166:05:43 hours
+DEBUG 2021-08-28 15:29:23.856 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u110046 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2021-08-28 15:29:23.857 UTC: 	 Command use: checkwrite
+DEBUG 2021-08-28 15:29:23.857 UTC: 	 Options use: ['--site=T3_CH_CERNBOX']
+DEBUG 2021-08-28 15:29:23.857 UTC: 	 Instance is None
+DEBUG 2021-08-28 15:29:23.857 UTC: 	 Server base url is None
+DEBUG 2021-08-28 15:29:23.857 UTC: 	 Retrieving username ...
+DEBUG 2021-08-28 15:29:23.857 UTC: 	 Retrieving username from CRIC...
+DEBUG 2021-08-28 15:29:24.575 UTC: 	 username is yian
+INFO 2021-08-28 15:29:24.575 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2021-08-28 15:29:24.576 UTC: 	 Validating LFN /store/user/yian...
+INFO 2021-08-28 15:29:24.576 UTC: 	 LFN /store/user/yian is valid.
+INFO 2021-08-28 15:29:24.590 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2021-08-28 15:29:24.590 UTC: 	 Will check write permission in /store/user/yian on site T3_CH_CERNBOX
+INFO 2021-08-28 15:29:27.246 UTC: 	 Will use PFN: gsiftp://eosuserftp.cern.ch:2811/gsiftp:/eosuserftp.cern.ch/eos/user/y/yian/crab3checkwrite_20210828_172924/crab3checkwrite_20210828_172924.tmp
+INFO 2021-08-28 15:29:27.246 UTC: 	 
+Attempting to create (dummy) directory crab3checkwrite_20210828_172924 and copy (dummy) file crab3checkwrite_20210828_172924.tmp to /store/user/yian
+
+INFO 2021-08-28 15:29:27.252 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_20/src/PhysicsTools/NanoAODTools/WWG/2017/WWG_fakelepton/crab3checkwrite_20210828_172924.tmp 'gsiftp://eosuserftp.cern.ch:2811/gsiftp:/eosuserftp.cern.ch/eos/user/y/yian/crab3checkwrite_20210828_172924/crab3checkwrite_20210828_172924.tmp'
+INFO 2021-08-28 15:29:27.253 UTC: 	 Please wait...
+INFO 2021-08-28 15:29:28.370 UTC: 	 Failed running copy command
+INFO 2021-08-28 15:29:28.370 UTC: 	   Stdout:
+    Copying 85 bytes file:///afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_20/src/PhysicsTools/NanoAODTools/WWG/2017/WWG_fakelepton/crab3checkwrite_20210828_172924.tmp => gsiftp://eosuserftp.cern.ch:2811/gsiftp:/eosuserftp.cern.ch/eos/user/y/yian/crab3checkwrite_20210828_172924/crab3checkwrite_20210828_172924.tmp
+    event: [1630164568339] BOTH   GFAL2:CORE:COPY	LIST:ENTER	
+    event: [1630164568340] BOTH   GFAL2:CORE:COPY	LIST:ITEM	file:///afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_20/src/PhysicsTools/NanoAODTools/WWG/2017/WWG_fakelepton/crab3checkwrite_20210828_172924.tmp => gsiftp://eosuserftp.cern.ch:2811/gsiftp:/eosuserftp.cern.ch/eos/user/y/yian/crab3checkwrite_20210828_172924/crab3checkwrite_20210828_172924.tmp
+    event: [1630164568340] BOTH   GFAL2:CORE:COPY	LIST:EXIT	
+    
+INFO 2021-08-28 15:29:28.370 UTC: 	   Stderr:
+    gfal-copy error: 13 (Permission denied) - globus_ftp_client: the server responded with an error 550 550-GlobusError: v=1 c=PERMISSION_DENIED  550-GridFTP-Errno: 13  550-GridFTP-Reason: System error in stat  550-GridFTP-Error-String: Permission denied  550 End.   
+    
+INFO 2021-08-28 15:29:28.382 UTC: 	 
+Checkwrite Result:
+INFO 2021-08-28 15:29:28.382 UTC: 	 Error: Unable to write in /store/user/yian on site T3_CH_CERNBOX
+       You may want to contact the site administrators sending them the 'crab checkwrite' output as printed above.
+INFO 2021-08-28 15:29:28.382 UTC: 	 Note: You cannot write to a site if you did not ask permission.
+INFO 2021-08-28 15:29:29.452 UTC: 	 Additional diagnostic info for CERN EOS
+== id ==>:
+uid=110046(yian) gid=1399(zh) groups=1399(zh),1092690190 context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+== voms-proxy-info -all ==>:
+subject   : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yian/CN=826694/CN=Ying An/CN=717960819
+issuer    : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yian/CN=826694/CN=Ying An
+identity  : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yian/CN=826694/CN=Ying An
+type      : RFC3820 compliant impersonation proxy
+strength  : 2048
+path      : /tmp/x509up_u110046
+timeleft  : 166:05:37
+key usage : Digital Signature, Key Encipherment
+=== VO cms extension information ===
+VO        : cms
+subject   : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yian/CN=826694/CN=Ying An
+issuer    : /DC=ch/DC=cern/OU=computers/CN=lcg-voms2.cern.ch
+attribute : /cms/Role=NULL/Capability=NULL
+timeleft  : 166:05:37
+uri       : lcg-voms2.cern.ch:15002
+
+== uberftp eoscmsftp.cern.ch pwd ==>:
+220 eoscmsftp03.cern.ch GridFTP Server 13.21 (gcc64, 1607703417-0) [Grid Community Toolkit 6.2] ready.
+230 User yian logged in.
+/afs/cern.ch/user/y/yian
+
