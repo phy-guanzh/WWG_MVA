@@ -55,7 +55,7 @@ g17
 tp28
 Rp29
 sg20
-S'T3_CH_CERNBOX'
+S'T2_CH_CERN'
 p30
 sS'_internal_parent_ref'
 p31
@@ -208,7 +208,7 @@ p89
 sg31
 Nsg80
 (lp90
-S'../../../scripts/haddnano.py'
+S'../../../../scripts/haddnano.py'
 p91
 aS'../WWG_selector/WWG_postproc.py'
 p92
@@ -272,7 +272,7 @@ S'prod'
 p115
 sS'RequestName'
 p116
-V220119_103351:yian_crab_tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pythia8_2018
+V220120_174700:yian_crab_tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pythia8_2018
 p117
 sS'voRole'
 p118

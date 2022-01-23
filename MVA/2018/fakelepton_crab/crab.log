@@ -379,3 +379,60 @@ Traceback (most recent call last):
     raise ConfigurationException(msg)
 ConfigurationException: [91mError[0m: crab2018/crab_DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8 is not a valid CRAB project directory.
 INFO 2021-10-24 11:27:27.725 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_20/src/PhysicsTools/NanoAODTools/WWG/2018/fakelepton_crab/crab.log
+DEBUG 2022-01-20 17:34:20.115 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-20 17:34:20.116 UTC: 	 Running on: Linux lxplus755.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-20 17:34:20.116 UTC: 	 Executing command: 'resubmit'
+DEBUG 2022-01-20 17:34:20.130 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-20 17:34:20.137 UTC: 	 Error: crab2018/crab_EGamma_Run2018D is not a valid CRAB project directory.
+ERROR 2022-01-20 17:34:20.138 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/resubmit.py", line 30, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 636, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab2018/crab_EGamma_Run2018D is not a valid CRAB project directory.
+INFO 2022-01-20 17:34:20.192 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/MVA/2018/fakelepton_crab/crab.log
+DEBUG 2022-01-22 14:35:46.998 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-22 14:35:46.998 UTC: 	 Running on: Linux lxplus793.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-22 14:35:46.998 UTC: 	 Executing command: 'resubmit'
+DEBUG 2022-01-22 14:35:46.998 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-22 14:35:46.999 UTC: 	 Error: crab2018/crab_WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8 is not a valid CRAB project directory.
+ERROR 2022-01-22 14:35:46.999 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/resubmit.py", line 30, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 636, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab2018/crab_WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8 is not a valid CRAB project directory.
+INFO 2022-01-22 14:35:47.031 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/MVA/2018/fakelepton_crab/crab.log
+DEBUG 2022-01-22 14:35:47.390 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-22 14:35:47.390 UTC: 	 Running on: Linux lxplus793.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-22 14:35:47.390 UTC: 	 Executing command: 'resubmit'
+DEBUG 2022-01-22 14:35:47.390 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-22 14:35:47.391 UTC: 	 Error: crab2018/crab_DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8 is not a valid CRAB project directory.
+ERROR 2022-01-22 14:35:47.391 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/resubmit.py", line 30, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 636, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab2018/crab_DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8 is not a valid CRAB project directory.
+INFO 2022-01-22 14:35:47.393 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/MVA/2018/fakelepton_crab/crab.log

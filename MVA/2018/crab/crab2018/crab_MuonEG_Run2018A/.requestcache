@@ -55,7 +55,7 @@ g17
 tp28
 Rp29
 sg20
-S'T3_CH_CERNBOX'
+S'T2_CH_CERN'
 p30
 sS'_internal_parent_ref'
 p31
@@ -213,7 +213,7 @@ p91
 sg31
 Nsg82
 (lp92
-S'../../../scripts/haddnano.py'
+S'../../../../scripts/haddnano.py'
 p93
 aS'../WWG_selector/WWG_postproc.py'
 p94
@@ -277,7 +277,7 @@ S'prod'
 p117
 sS'RequestName'
 p118
-V220119_105044:yian_crab_MuonEG_Run2018A
+V220120_173214:yian_crab_MuonEG_Run2018A
 p119
 sS'voRole'
 p120
