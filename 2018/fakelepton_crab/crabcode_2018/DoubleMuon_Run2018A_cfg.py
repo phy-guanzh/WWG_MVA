@@ -17,13 +17,11 @@ config.JobType.allowUndistributedCMSSW = True
 
 config.section_("Data")
 config.Data.inputDataset = "/DoubleMuon/Run2018A-UL2018_MiniAODv2_NanoAODv9-v1/NANOAOD" 
-#config.Data.inputDBS = "phys03"
 config.Data.inputDBS = "global"
-# config.Data.splitting = "LumiBased"
-config.Data.splitting = "FileBased"
-#config.Data.splitting = "EventAwareLumiBased" 
-#config.Data.splitting = "Automatic" 
-config.Data.unitsPerJob = 1
+# config.Data.splitting = "FileBased"
+# config.Data.unitsPerJob = 1
+config.Data.splitting = "LumiBased"
+config.Data.unitsPerJob = 50
 config.Data.lumiMask = "/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions18/13TeV/Legacy_2018/Cert_314472-325175_13TeV_Legacy2018_Collisions18_JSON.txt" 
 
 config.Data.publication = False

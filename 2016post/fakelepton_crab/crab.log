@@ -205,3 +205,238 @@ Traceback (most recent call last):
 ConfigException: Working area '/afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_20/src/PhysicsTools/NanoAODTools/WWG/2016post/fakelepton_crab/crab2016/crab_DoubleEG_Run2016G' already exists 
 Please change the requestName in the config file
 INFO 2021-11-18 06:56:22.234 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_20/src/PhysicsTools/NanoAODTools/WWG/2016post/fakelepton_crab/crab.log
+DEBUG 2022-01-28 10:12:33.383 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 10:12:33.384 UTC: 	 Running on: Linux lxplus775.cern.ch 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 10:12:33.384 UTC: 	 Executing command: 'status'
+DEBUG 2022-01-28 10:12:33.384 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-28 10:12:33.850 UTC: 	 Error: crab2016/crab_TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_2016 is not a valid CRAB project directory.
+ERROR 2022-01-28 10:12:33.850 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/status.py", line 47, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 636, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab2016/crab_TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_2016 is not a valid CRAB project directory.
+INFO 2022-01-28 10:12:35.739 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/fakelepton_crab/crab.log
+DEBUG 2022-01-28 17:39:59.285 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 17:39:59.285 UTC: 	 Running on: Linux lxplus775.cern.ch 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 17:39:59.285 UTC: 	 Executing command: 'remake'
+DEBUG 2022-01-28 17:39:59.294 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+DEBUG 2022-01-28 17:39:59.371 UTC: 	 Checking credentials
+DEBUG 2022-01-28 17:39:59.371 UTC: 	 Found proxy file /tmp/x509up_u110046
+DEBUG 2022-01-28 17:39:59.371 UTC: 	 Getting proxy life time left
+DEBUG 2022-01-28 17:39:59.371 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u110046
+DEBUG 2022-01-28 17:40:00.861 UTC: 	 output : 568026
+568026
+
+ error: 
+ retcode : 0
+DEBUG 2022-01-28 17:40:00.861 UTC: 	 Proxy valid for 157:47:06 hours
+DEBUG 2022-01-28 17:40:01.192 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2022-01-28 17:40:01.193 UTC: 	 Executing command :
+ curl -v -X GET -H "User-Agent: CRABClient/v3.211130" -H "Accept: */*" --data @/tmp/curlData5_PNrV --cert "/tmp/x509up_u110046" --key "/tmp/x509up_u110046" --capath "/etc/grid-security/certificates/" "https://cmsweb.cern.ch:8443/crabserver/prod/info?subresource=delegatedn" | tee /dev/stderr 
+DEBUG 2022-01-28 17:40:01.342 UTC: 	 output : {"result": [
+ {"services": ["/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch"]}
+]}
+
+ error:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 137.138.120.6...
+* TCP_NODELAY set
+* Connected to cmsweb.cern.ch (137.138.120.6) port 8443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: /etc/grid-security/certificates/
+* TLSv1.2 (OUT), TLS header, Certificate Status (22):
+} [5 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server hello (2):
+{ [109 bytes data]
+* TLSv1.2 (IN), TLS handshake, Certificate (11):
+{ [6224 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+{ [333 bytes data]
+* TLSv1.2 (IN), TLS handshake, Request CERT (13):
+{ [13495 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server finished (14):
+{ [4 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Certificate (11):
+} [6615 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+} [70 bytes data]
+* TLSv1.2 (OUT), TLS handshake, CERT verify (15):
+} [264 bytes data]
+* TLSv1.2 (OUT), TLS change cipher, Client hello (1):
+} [1 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Finished (20):
+} [16 bytes data]
+* TLSv1.2 (IN), TLS change cipher, Client hello (1):
+{ [1 bytes data]
+* TLSv1.2 (IN), TLS handshake, Finished (20):
+{ [16 bytes data]
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: DC=ch; DC=cern; OU=computers; CN=cmsweb.cern.ch
+*  start date: Feb  2 08:08:53 2021 GMT
+*  expire date: Mar  9 08:08:53 2022 GMT
+*  subjectAltName: host "cmsweb.cern.ch" matched cert's "cmsweb.cern.ch"
+*  issuer: DC=ch; DC=cern; CN=CERN Grid Certification Authority
+*  SSL certificate verify ok.
+} [5 bytes data]
+> GET /crabserver/prod/info?subresource=delegatedn HTTP/1.1
+> Host: cmsweb.cern.ch:8443
+> User-Agent: CRABClient/v3.211130
+> Accept: */*
+> Content-Length: 22
+> Content-Type: application/x-www-form-urlencoded
+> 
+} [22 bytes data]
+* upload completely sent off: 22 out of 22 bytes
+{ [5 bytes data]
+< HTTP/1.1 200 OK
+< Date: Fri, 28 Jan 2022 17:40:01 GMT
+< Server: nginx/1.17.10
+< Content-Type: application/json
+< Content-Length: 213
+< Vary: Accept
+< Cache-Control: max-age=3600
+< X-Rest-Status: 100
+< Etag: "de92dcb56f87dabbe30965e60a433c3f1b873eab"
+< X-Rest-Time: 2215.862 us
+< CMS-Server-Time: D=15683 t=1643391601319971
+< 
+{ [5 bytes data]
+100   235  100   213  100    22   3550    366 --:--:-- --:--:-- --:--:--  3983
+* Connection #0 to host cmsweb.cern.ch left intact
+{"result": [
+ {"services": ["/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch"]}
+]}
+
+ retcode : 0
+DEBUG 2022-01-28 17:40:01.343 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+DEBUG 2022-01-28 17:40:01.343 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u110046
+DEBUG 2022-01-28 17:40:02.914 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yian/CN=826694/CN=Ying An
+
+ error: 
+ retcode : 0
+DEBUG 2022-01-28 17:40:02.915 UTC: 	 Getting myproxy life time left for b52ac606a6f7097e9b4b8f05a3a67cc69f8f291b
+DEBUG 2022-01-28 17:40:02.915 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l b52ac606a6f7097e9b4b8f05a3a67cc69f8f291b
+DEBUG 2022-01-28 17:40:03.704 UTC: 	 output : username: b52ac606a6f7097e9b4b8f05a3a67cc69f8f291b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yian/CN=826694/CN=Ying An
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  timeleft: 496:52:24  (20.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2022-01-28 17:40:03.705 UTC: 	 Myproxy is valid: 1788720
+DEBUG 2022-01-28 17:40:03.705 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: b52ac606a6f7097e9b4b8f05a3a67cc69f8f291b  - validity: 20 days, 16:52:00
+DEBUG 2022-01-28 17:40:03.705 UTC: 	 Command use: remake
+DEBUG 2022-01-28 17:40:03.705 UTC: 	 Options use: ['--task=220128_075148:yian_crab_TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8_2016']
+DEBUG 2022-01-28 17:40:03.706 UTC: 	 Encoded data for curl request: subresource=version
+DEBUG 2022-01-28 17:40:03.706 UTC: 	 Executing command :
+ curl -v -X GET -H "User-Agent: CRABClient/v3.211130" -H "Accept: */*" --data @/tmp/curlDataRb0piD --cert "/tmp/x509up_u110046" --key "/tmp/x509up_u110046" --capath "/etc/grid-security/certificates/" "https://cmsweb.cern.ch:8443/crabserver/prod/info?subresource=version" | tee /dev/stderr 
+DEBUG 2022-01-28 17:40:04.208 UTC: 	 output : {"result": [
+ ["3.3.19", "3.3.20", "v3", "development", "py3.220124"]
+]}
+
+ error:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 137.138.120.6...
+* TCP_NODELAY set
+* Connected to cmsweb.cern.ch (137.138.120.6) port 8443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: /etc/grid-security/certificates/
+* TLSv1.2 (OUT), TLS header, Certificate Status (22):
+} [5 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server hello (2):
+{ [109 bytes data]
+* TLSv1.2 (IN), TLS handshake, Certificate (11):
+{ [6224 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+{ [333 bytes data]
+* TLSv1.2 (IN), TLS handshake, Request CERT (13):
+{ [13495 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server finished (14):
+{ [4 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Certificate (11):
+} [6615 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+} [70 bytes data]
+* TLSv1.2 (OUT), TLS handshake, CERT verify (15):
+} [264 bytes data]
+* TLSv1.2 (OUT), TLS change cipher, Client hello (1):
+} [1 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Finished (20):
+} [16 bytes data]
+* TLSv1.2 (IN), TLS change cipher, Client hello (1):
+{ [1 bytes data]
+* TLSv1.2 (IN), TLS handshake, Finished (20):
+{ [16 bytes data]
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: DC=ch; DC=cern; OU=computers; CN=cmsweb.cern.ch
+*  start date: Feb  2 08:08:53 2021 GMT
+*  expire date: Mar  9 08:08:53 2022 GMT
+*  subjectAltName: host "cmsweb.cern.ch" matched cert's "cmsweb.cern.ch"
+*  issuer: DC=ch; DC=cern; CN=CERN Grid Certification Authority
+*  SSL certificate verify ok.
+} [5 bytes data]
+> GET /crabserver/prod/info?subresource=version HTTP/1.1
+> Host: cmsweb.cern.ch:8443
+> User-Agent: CRABClient/v3.211130
+> Accept: */*
+> Content-Length: 19
+> Content-Type: application/x-www-form-urlencoded
+> 
+} [19 bytes data]
+* upload completely sent off: 19 out of 19 bytes
+{ [5 bytes data]
+< HTTP/1.1 200 OK
+< Date: Fri, 28 Jan 2022 17:40:04 GMT
+< Server: nginx/1.17.10
+< Content-Type: application/json
+< Content-Length: 73
+< Vary: Accept
+< Cache-Control: max-age=3600
+< X-Rest-Status: 100
+< Etag: "3309a93c90cdb00bd297a532c9c67f645a0b4b24"
+< X-Rest-Time: 233719.587 us
+< CMS-Server-Time: D=265777 t=1643391603912596
+< 
+{ [5 bytes data]
+100    92  100    73  100    19    197     51 --:--:-- --:--:-- --:--:--   248
+* Connection #0 to host cmsweb.cern.ch left intact
+{"result": [
+ ["3.3.19", "3.3.20", "v3", "development", "py3.220124"]
+]}
+
+ retcode : 0
+DEBUG 2022-01-28 17:40:04.209 UTC: 	 CRABClient version: v3.211130
+DEBUG 2022-01-28 17:40:04.209 UTC: 	 Instance is prod
+DEBUG 2022-01-28 17:40:04.209 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2022-01-28 17:40:04.209 UTC: 	 Command api workflow
+INFO 2022-01-28 17:40:04.209 UTC: 	 Remaking crab_TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8_2016 folder.
+INFO 2022-01-28 17:40:04.347 UTC: 	 Remaking .requestcache file.
+INFO 2022-01-28 17:40:04.505 UTC: 	 Success: Finished remaking project directory crab_TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8_2016
+INFO 2022-01-28 17:40:04.579 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/fakelepton_crab/crab.log

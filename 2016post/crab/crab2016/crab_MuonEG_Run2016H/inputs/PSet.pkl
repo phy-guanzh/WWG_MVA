@@ -42,7 +42,7 @@ p20
 I196
 sS'_filename'
 p21
-S'/cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_20/python/FWCore/ParameterSet/Modules.py'
+S'/cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_29/python/FWCore/ParameterSet/Modules.py'
 p22
 sg17
 g0
@@ -119,7 +119,7 @@ I00
 sg20
 I16
 sg21
-S'/afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_20/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/PSet.py'
+S'/afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/PSet.py'
 p54
 sg53
 g0
@@ -237,11 +237,11 @@ p95
 sS'_cloneToObjectDict'
 p97
 (dp98
-I139918668812112
+I140062605872080
 g78
-sI139918668812048
+sI140062605872016
 g50
-sI139918668972112
+sI140062605872272
 g39
 ssS'_Process__esprefers'
 p99

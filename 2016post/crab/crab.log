@@ -1455,3 +1455,897 @@ Traceback (most recent call last):
 ConfigException: Working area '/afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_20/src/PhysicsTools/NanoAODTools/WWG/2018/crab/crab2018/crab_TTWJetsToLNu_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8_2018' already exists 
 Please change the requestName in the config file
 INFO 2021-07-19 09:17:03.223 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_20/src/PhysicsTools/NanoAODTools/WWG/2018/crab/crab.log
+DEBUG 2022-01-28 07:31:25.233 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:25.233 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:25.233 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:25.234 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:25.237 UTC: 	 Will use CRAB configuration file crabcode_2016/DoubleEG_Run2016G_cfg.py
+DEBUG 2022-01-28 07:31:25.237 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:25.243 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:25.243 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:25.243 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:25.295 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:25.705 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:25.706 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:25.706 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:25.706 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:25.707 UTC: 	 Will use CRAB configuration file crabcode_2016/DoubleEG_Run2016H_cfg.py
+DEBUG 2022-01-28 07:31:25.707 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:25.711 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:25.711 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:25.711 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:25.714 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:26.114 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:26.114 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:26.115 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:26.115 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:26.115 UTC: 	 Will use CRAB configuration file crabcode_2016/DoubleMuon_Run2016G_cfg.py
+DEBUG 2022-01-28 07:31:26.115 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:26.119 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:26.119 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:26.119 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:26.121 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:26.516 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:26.517 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:26.517 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:26.517 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:26.518 UTC: 	 Will use CRAB configuration file crabcode_2016/DoubleMuon_Run2016H_cfg.py
+DEBUG 2022-01-28 07:31:26.518 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:26.523 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:26.523 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:26.523 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:26.525 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:26.906 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:26.907 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:26.907 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:26.907 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:26.908 UTC: 	 Will use CRAB configuration file crabcode_2016/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8_2016_cfg.py
+DEBUG 2022-01-28 07:31:26.908 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:26.911 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:26.911 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:26.912 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:26.914 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:27.333 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:27.333 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:27.334 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:27.334 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:27.334 UTC: 	 Will use CRAB configuration file crabcode_2016/MET_Run2016G_cfg.py
+DEBUG 2022-01-28 07:31:27.334 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:27.340 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:27.340 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:27.340 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:27.343 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:27.757 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:27.757 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:27.757 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:27.757 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:27.758 UTC: 	 Will use CRAB configuration file crabcode_2016/MET_Run2016H_cfg.py
+DEBUG 2022-01-28 07:31:27.758 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:27.762 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:27.762 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:27.762 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:27.764 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:28.244 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:28.245 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:28.245 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:28.245 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:28.246 UTC: 	 Will use CRAB configuration file crabcode_2016/MuonEG_Run2016G_cfg.py
+DEBUG 2022-01-28 07:31:28.246 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:28.251 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:28.251 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:28.251 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:28.254 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:28.678 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:28.678 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:28.678 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:28.679 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:28.679 UTC: 	 Will use CRAB configuration file crabcode_2016/MuonEG_Run2016H_cfg.py
+DEBUG 2022-01-28 07:31:28.680 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:28.684 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:28.684 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:28.684 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:28.686 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:29.096 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:29.097 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:29.097 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:29.097 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:29.098 UTC: 	 Will use CRAB configuration file crabcode_2016/SingleElectron_Run2016G_cfg.py
+DEBUG 2022-01-28 07:31:29.098 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:29.102 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:29.102 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:29.102 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:29.104 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:29.488 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:29.488 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:29.488 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:29.489 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:29.489 UTC: 	 Will use CRAB configuration file crabcode_2016/SingleElectron_Run2016H_cfg.py
+DEBUG 2022-01-28 07:31:29.489 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:29.493 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:29.493 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:29.493 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:29.496 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:29.904 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:29.905 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:29.905 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:29.906 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:29.908 UTC: 	 Will use CRAB configuration file crabcode_2016/SingleMuon_Run2016G_cfg.py
+DEBUG 2022-01-28 07:31:29.908 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:29.911 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:29.912 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:29.912 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:29.914 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:30.327 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:30.327 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:30.327 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:30.328 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:30.328 UTC: 	 Will use CRAB configuration file crabcode_2016/SingleMuon_Run2016H_cfg.py
+DEBUG 2022-01-28 07:31:30.329 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:30.332 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:30.332 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:30.332 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:30.335 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:30.740 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:30.740 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:30.740 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:30.740 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:30.741 UTC: 	 Will use CRAB configuration file crabcode_2016/ST_tW_antitop_5f_NoFullyHadronicDecays_TuneCP5_13TeV-powheg-pythia8_2016_cfg.py
+DEBUG 2022-01-28 07:31:30.741 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:30.747 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:30.747 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:30.747 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:30.749 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:31.152 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:31.153 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:31.153 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:31.153 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:31.154 UTC: 	 Will use CRAB configuration file crabcode_2016/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_13TeV-powheg-pythia8_2016_cfg.py
+DEBUG 2022-01-28 07:31:31.154 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:31.158 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:31.158 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:31.158 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:31.160 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:31.578 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:31.579 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:31.579 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:31.579 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:31.580 UTC: 	 Will use CRAB configuration file crabcode_2016/TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8_2016_cfg.py
+DEBUG 2022-01-28 07:31:31.580 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:31.586 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:31.586 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:31.586 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:31.589 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:32.007 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:32.008 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:32.008 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:32.008 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:32.009 UTC: 	 Will use CRAB configuration file crabcode_2016/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_2016_cfg.py
+DEBUG 2022-01-28 07:31:32.009 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:32.013 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:32.013 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:32.013 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:32.016 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:32.431 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:32.431 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:32.432 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:32.432 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:32.433 UTC: 	 Will use CRAB configuration file crabcode_2016/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pythia8_2016_cfg.py
+DEBUG 2022-01-28 07:31:32.433 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:32.436 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:32.437 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:32.437 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:32.439 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:32.844 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:32.844 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:32.844 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:32.844 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:32.845 UTC: 	 Will use CRAB configuration file crabcode_2016/WGToLNuG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_2016_cfg.py
+DEBUG 2022-01-28 07:31:32.845 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:32.849 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:32.849 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:32.850 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:32.852 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:33.290 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:33.290 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:33.290 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:33.290 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:33.291 UTC: 	 Will use CRAB configuration file crabcode_2016/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8_2016_cfg.py
+DEBUG 2022-01-28 07:31:33.291 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:33.295 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:33.295 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:33.295 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:33.297 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:33.699 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:33.700 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:33.700 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:33.700 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:33.701 UTC: 	 Will use CRAB configuration file crabcode_2016/WWTo2L2Nu_TuneCP5_13TeV-powheg-pythia8_2016_cfg.py
+DEBUG 2022-01-28 07:31:33.701 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:33.706 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:33.706 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:33.706 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:33.710 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:34.129 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:34.130 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:34.130 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:34.130 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:34.131 UTC: 	 Will use CRAB configuration file crabcode_2016/WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8_2016_cfg.py
+DEBUG 2022-01-28 07:31:34.131 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:34.134 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:34.134 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:34.134 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:34.137 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:34.563 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:34.564 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:34.564 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:34.564 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:34.565 UTC: 	 Will use CRAB configuration file crabcode_2016/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_2016_cfg.py
+DEBUG 2022-01-28 07:31:34.565 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:34.570 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:34.570 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:34.570 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:34.572 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:34.985 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:34.985 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:34.986 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:34.986 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:34.987 UTC: 	 Will use CRAB configuration file crabcode_2016/ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8_2016_cfg.py
+DEBUG 2022-01-28 07:31:34.987 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:34.992 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:34.992 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:34.992 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:34.995 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 07:31:35.414 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 07:31:35.415 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 07:31:35.415 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-28 07:31:35.415 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+INFO 2022-01-28 07:31:35.416 UTC: 	 Will use CRAB configuration file crabcode_2016/ZZTo4L_M-1toInf_TuneCP5_13TeV_powheg_pythia8_2016_cfg.py
+DEBUG 2022-01-28 07:31:35.416 UTC: 	 Loading CRAB configuration file.
+DEBUG 2022-01-28 07:31:35.419 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2022-01-28 07:31:35.419 UTC: 	 Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2022-01-28 07:31:35.419 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 310, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Cannot find the file ./WWG_crab_script.sh specified in the JobType.scriptExe configuration parameter.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2022-01-28 07:31:35.422 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 08:26:32.715 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 08:26:32.716 UTC: 	 Running on: Linux lxplus775.cern.ch 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 08:26:32.716 UTC: 	 Executing command: 'status'
+DEBUG 2022-01-28 08:26:32.716 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-28 08:26:32.723 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab2016/crab_WWTo2L2Nu_TuneCP5_13TeV-powheg-pythia8_2016
+ERROR 2022-01-28 08:26:32.723 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/status.py", line 47, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 640, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 502, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab2016/crab_WWTo2L2Nu_TuneCP5_13TeV-powheg-pythia8_2016
+INFO 2022-01-28 08:26:32.859 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 08:26:33.276 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 08:26:33.277 UTC: 	 Running on: Linux lxplus775.cern.ch 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 08:26:33.277 UTC: 	 Executing command: 'status'
+DEBUG 2022-01-28 08:26:33.277 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-28 08:26:33.279 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab2016/crab_WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8_2016
+ERROR 2022-01-28 08:26:33.279 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/status.py", line 47, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 640, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 502, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab2016/crab_WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8_2016
+INFO 2022-01-28 08:26:33.282 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 08:26:33.697 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 08:26:33.697 UTC: 	 Running on: Linux lxplus775.cern.ch 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 08:26:33.697 UTC: 	 Executing command: 'status'
+DEBUG 2022-01-28 08:26:33.698 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-28 08:26:33.700 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab2016/crab_ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_2016
+ERROR 2022-01-28 08:26:33.701 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/status.py", line 47, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 640, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 502, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab2016/crab_ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_2016
+INFO 2022-01-28 08:26:33.704 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 08:26:34.076 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 08:26:34.077 UTC: 	 Running on: Linux lxplus775.cern.ch 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 08:26:34.077 UTC: 	 Executing command: 'status'
+DEBUG 2022-01-28 08:26:34.077 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-28 08:26:34.079 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab2016/crab_ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8_2016
+ERROR 2022-01-28 08:26:34.079 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/status.py", line 47, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 640, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 502, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab2016/crab_ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8_2016
+INFO 2022-01-28 08:26:34.082 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 08:26:34.459 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 08:26:34.459 UTC: 	 Running on: Linux lxplus775.cern.ch 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 08:26:34.459 UTC: 	 Executing command: 'status'
+DEBUG 2022-01-28 08:26:34.459 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-28 08:26:34.462 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab2016/crab_ZZTo4L_M-1toInf_TuneCP5_13TeV_powheg_pythia8_2016
+ERROR 2022-01-28 08:26:34.462 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/status.py", line 47, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 640, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 502, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab2016/crab_ZZTo4L_M-1toInf_TuneCP5_13TeV_powheg_pythia8_2016
+INFO 2022-01-28 08:26:34.464 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 10:14:40.206 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 10:14:40.207 UTC: 	 Running on: Linux lxplus775.cern.ch 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 10:14:40.207 UTC: 	 Executing command: 'kill'
+DEBUG 2022-01-28 10:14:40.207 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-28 10:14:41.346 UTC: 	 Error: crabcode_2016/DoubleEG_Run2016G_cfg.py is not a valid CRAB project directory.
+ERROR 2022-01-28 10:14:41.346 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 636, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crabcode_2016/DoubleEG_Run2016G_cfg.py is not a valid CRAB project directory.
+INFO 2022-01-28 10:14:45.532 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 10:14:48.682 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 12:34:43.259 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 12:34:43.259 UTC: 	 Running on: Linux lxplus775.cern.ch 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 12:34:43.259 UTC: 	 Executing command: 'status'
+DEBUG 2022-01-28 12:34:43.259 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-28 12:34:43.260 UTC: 	 Error: crab2016/crab_DoubleEG_Run2016G is not a valid CRAB project directory.
+ERROR 2022-01-28 12:34:43.261 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/status.py", line 47, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 636, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab2016/crab_DoubleEG_Run2016G is not a valid CRAB project directory.
+INFO 2022-01-28 12:34:43.299 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 12:34:43.745 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 12:34:43.746 UTC: 	 Running on: Linux lxplus775.cern.ch 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 12:34:43.746 UTC: 	 Executing command: 'status'
+DEBUG 2022-01-28 12:34:43.746 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-28 12:34:43.747 UTC: 	 Error: crab2016/crab_DoubleEG_Run2016H is not a valid CRAB project directory.
+ERROR 2022-01-28 12:34:43.747 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/status.py", line 47, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 636, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab2016/crab_DoubleEG_Run2016H is not a valid CRAB project directory.
+INFO 2022-01-28 12:34:43.750 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 12:34:44.156 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 12:34:44.156 UTC: 	 Running on: Linux lxplus775.cern.ch 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 12:34:44.156 UTC: 	 Executing command: 'status'
+DEBUG 2022-01-28 12:34:44.156 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-28 12:34:44.157 UTC: 	 Error: crab2016/crab_DoubleMuon_Run2016G is not a valid CRAB project directory.
+ERROR 2022-01-28 12:34:44.157 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/status.py", line 47, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 636, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab2016/crab_DoubleMuon_Run2016G is not a valid CRAB project directory.
+INFO 2022-01-28 12:34:44.160 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 12:34:44.586 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 12:34:44.586 UTC: 	 Running on: Linux lxplus775.cern.ch 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 12:34:44.586 UTC: 	 Executing command: 'status'
+DEBUG 2022-01-28 12:34:44.587 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-28 12:34:44.587 UTC: 	 Error: crab2016/crab_DoubleMuon_Run2016H is not a valid CRAB project directory.
+ERROR 2022-01-28 12:34:44.588 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/status.py", line 47, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 636, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab2016/crab_DoubleMuon_Run2016H is not a valid CRAB project directory.
+INFO 2022-01-28 12:34:44.591 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 12:45:33.072 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 12:45:33.072 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 12:45:33.072 UTC: 	 Executing command: 'status'
+DEBUG 2022-01-28 12:45:33.072 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-28 12:45:33.073 UTC: 	 Error: crab2016/crab_DoubleEG_Run2016G is not a valid CRAB project directory.
+ERROR 2022-01-28 12:45:33.073 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/status.py", line 47, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 636, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab2016/crab_DoubleEG_Run2016G is not a valid CRAB project directory.
+INFO 2022-01-28 12:45:33.140 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 12:45:33.584 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 12:45:33.585 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 12:45:33.585 UTC: 	 Executing command: 'status'
+DEBUG 2022-01-28 12:45:33.585 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-28 12:45:33.586 UTC: 	 Error: crab2016/crab_DoubleEG_Run2016H is not a valid CRAB project directory.
+ERROR 2022-01-28 12:45:33.586 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/status.py", line 47, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 636, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab2016/crab_DoubleEG_Run2016H is not a valid CRAB project directory.
+INFO 2022-01-28 12:45:33.589 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 12:45:34.073 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 12:45:34.074 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 12:45:34.074 UTC: 	 Executing command: 'status'
+DEBUG 2022-01-28 12:45:34.074 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-28 12:45:34.075 UTC: 	 Error: crab2016/crab_DoubleMuon_Run2016G is not a valid CRAB project directory.
+ERROR 2022-01-28 12:45:34.075 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/status.py", line 47, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 636, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab2016/crab_DoubleMuon_Run2016G is not a valid CRAB project directory.
+INFO 2022-01-28 12:45:34.078 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-28 12:45:34.498 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-28 12:45:34.498 UTC: 	 Running on: Linux lxplus752.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-28 12:45:34.498 UTC: 	 Executing command: 'status'
+DEBUG 2022-01-28 12:45:34.499 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-28 12:45:34.500 UTC: 	 Error: crab2016/crab_DoubleMuon_Run2016H is not a valid CRAB project directory.
+ERROR 2022-01-28 12:45:34.500 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/status.py", line 47, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 636, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab2016/crab_DoubleMuon_Run2016H is not a valid CRAB project directory.
+INFO 2022-01-28 12:45:34.502 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log
+DEBUG 2022-01-30 08:56:39.677 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-30 08:56:39.677 UTC: 	 Running on: Linux lxplus765.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-30 08:56:39.677 UTC: 	 Executing command: 'status'
+DEBUG 2022-01-30 08:56:39.677 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3
+ERROR 2022-01-30 08:56:39.678 UTC: 	 Error: crab2016/crab_WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8_2016 is not a valid CRAB project directory.
+ERROR 2022-01-30 08:56:39.678 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 149, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/bin/crab.py", line 134, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/status.py", line 47, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 269, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.211130.01/lib/CRABClient/Commands/SubCommand.py", line 636, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab2016/crab_WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8_2016 is not a valid CRAB project directory.
+INFO 2022-01-30 08:56:39.732 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_29/src/PhysicsTools/NanoAODTools/WWG/2016post/crab/crab.log

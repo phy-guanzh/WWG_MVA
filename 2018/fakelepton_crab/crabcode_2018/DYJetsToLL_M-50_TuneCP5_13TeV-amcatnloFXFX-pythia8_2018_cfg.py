@@ -17,12 +17,10 @@ config.JobType.allowUndistributedCMSSW = True
 
 config.section_("Data")
 config.Data.inputDataset = "/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v2/NANOAODSIM" 
-#config.Data.inputDBS = "phys03"
 config.Data.inputDBS = "global"
-# config.Data.splitting = "LumiBased"
+# config.Data.splitting = "FileBased"
+# config.Data.unitsPerJob = 1
 config.Data.splitting = "FileBased"
-#config.Data.splitting = "EventAwareLumiBased" 
-#config.Data.splitting = "Automatic" 
 config.Data.unitsPerJob = 1
 config.Data.publication = False
 config.Data.ignoreLocality = True

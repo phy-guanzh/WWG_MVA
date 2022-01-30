@@ -17,13 +17,11 @@ config.JobType.allowUndistributedCMSSW = True
 
 config.section_("Data")
 config.Data.inputDataset = "/SingleMuon/Run2017E-UL2017_MiniAODv2_NanoAODv9-v1/NANOAOD" 
-#config.Data.inputDBS = "phys03"
 config.Data.inputDBS = "global"
-# config.Data.splitting = "LumiBased"
-config.Data.splitting = "FileBased"
-#config.Data.splitting = "EventAwareLumiBased" 
-#config.Data.splitting = "Automatic" 
-config.Data.unitsPerJob = 1
+# config.Data.splitting = "FileBased"
+# config.Data.unitsPerJob = 1
+config.Data.splitting = "LumiBased"
+config.Data.unitsPerJob = 50
 config.Data.lumiMask = "/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions17/13TeV/Legacy_2017/Cert_294927-306462_13TeV_UL2017_Collisions17_GoldenJSON.txt" 
 
 config.Data.publication = False
@@ -32,5 +30,5 @@ config.Data.allowNonValidInputDataset = True
 config.Data.outputDatasetTag = "SingleMuon_Run2017E" 
 
 config.section_("Site")
-config.Site.storageSite = "T2_CH_CERN"
+config.Site.storageSite = "T3_CH_CERNBOX"
 config.Site.whitelist = ["T2_US_MIT","T2_US_Wisconsin","T2_US_Purdue","T2_US_UCSD","T2_US_Caltech","T2_US_Nebraska"] 

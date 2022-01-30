@@ -48,7 +48,7 @@ else
     if [ $isdata == "data" ]; then
         python WWG_postproc.py -d -y $year -e $era
     else
-        python WWG_postproc.py -y $year 
+        python WWG_postproc.py -y $year -e $era
     fi
 
 fi

@@ -1963,3 +1963,7 @@ Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors
 See the ./crab.log file for more details.
 The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
 INFO 2021-12-09 06:29:43.199 UTC: 	 Log file is /afs/cern.ch/work/y/yian/work/GZ/CMSSW_10_6_20/src/PhysicsTools/NanoAODTools/WWG/2018/crab/crab.log
+DEBUG 2022-01-30 05:16:37.457 UTC: 	 CRAB Client version: v3.211130
+DEBUG 2022-01-30 05:16:37.458 UTC: 	 Running on: Linux lxplus731.cern.ch 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2022-01-30 05:16:37.458 UTC: 	 Executing command: 'submit'
+DEBUG 2022-01-30 05:16:37.458 UTC: 	 Found CRAB cache file /afs/cern.ch/user/y/yian/.crab3

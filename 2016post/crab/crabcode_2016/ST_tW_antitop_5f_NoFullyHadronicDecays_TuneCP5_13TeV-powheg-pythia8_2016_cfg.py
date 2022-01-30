@@ -11,18 +11,16 @@ config.JobType.pluginName = "Analysis"
 config.JobType.psetName = "PSet.py"
 config.JobType.scriptExe = "./WWG_crab_script.sh" 
 config.JobType.inputFiles = ["../../../scripts/haddnano.py","../WWG_selector/WWG_postproc.py","../WWG_selector/WWG_Module.py","../WWG_selector/WWG_keep_and_drop.txt","../WWG_selector/WWG_output_branch.txt","../WWG_selector/DAS_filesearch.py"] #hadd nano will not be needed once nano tools are in cmssw 
-config.JobType.scriptArgs = ["isdata=MC","year=2016","era=B"] 
+config.JobType.scriptArgs = ["isdata=MC","year=2016","era=G"] 
 config.JobType.sendPythonFolder  = True
 config.JobType.allowUndistributedCMSSW = True 
 
 config.section_("Data")
 config.Data.inputDataset = "/ST_tW_antitop_5f_NoFullyHadronicDecays_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v1/NANOAODSIM" 
-#config.Data.inputDBS = "phys03"
 config.Data.inputDBS = "global"
-# config.Data.splitting = "LumiBased"
+# config.Data.splitting = "FileBased"
+# config.Data.unitsPerJob = 1
 config.Data.splitting = "FileBased"
-#config.Data.splitting = "EventAwareLumiBased" 
-#config.Data.splitting = "Automatic" 
 config.Data.unitsPerJob = 1
 config.Data.publication = False
 config.Data.ignoreLocality = True

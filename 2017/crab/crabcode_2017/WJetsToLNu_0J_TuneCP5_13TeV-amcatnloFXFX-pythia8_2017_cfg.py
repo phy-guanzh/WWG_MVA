@@ -17,12 +17,10 @@ config.JobType.allowUndistributedCMSSW = True
 
 config.section_("Data")
 config.Data.inputDataset = "/WJetsToLNu_0J_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM" 
-#config.Data.inputDBS = "phys03"
 config.Data.inputDBS = "global"
-# config.Data.splitting = "LumiBased"
+# config.Data.splitting = "FileBased"
+# config.Data.unitsPerJob = 1
 config.Data.splitting = "FileBased"
-#config.Data.splitting = "EventAwareLumiBased" 
-#config.Data.splitting = "Automatic" 
 config.Data.unitsPerJob = 1
 config.Data.publication = False
 config.Data.ignoreLocality = True
@@ -30,5 +28,5 @@ config.Data.allowNonValidInputDataset = True
 config.Data.outputDatasetTag = "WJetsToLNu_0J_TuneCP5_13TeV-amcatnloFXFX-pythia8_2017" 
 
 config.section_("Site")
-config.Site.storageSite = "T2_CH_CERN"
+config.Site.storageSite = "T3_CH_CERNBOX"
 config.Site.whitelist = ["T2_US_MIT","T2_US_Wisconsin","T2_US_Purdue","T2_US_UCSD","T2_US_Caltech","T2_US_Nebraska"] 
