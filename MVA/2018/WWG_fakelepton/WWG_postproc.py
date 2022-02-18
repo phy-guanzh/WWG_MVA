@@ -31,16 +31,20 @@ from PhysicsTools.NanoAODTools.postprocessing.modules.btv.btagSFProducer import 
 from PhysicsTools.NanoAODTools.postprocessing.modules.common.PrefireCorr import *
 
 if args.year=='2016':
-   jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear=2016,runPeriod="B",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=True)
-   jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear=2016,runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=True)
+   jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear="UL2016",runPeriod="B",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=False)
+   jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear="UL2016",runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=False)
+
+if args.year=='2016pre':
+   jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear="UL2016_preVFP",runPeriod="B",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=False)
+   jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear="UL2016_preVFP",runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=False)
 
 if args.year=='2017':
-   jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear=2017,runPeriod="B",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="METFixEE2017",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=True)
-   jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear=2017,runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="METFixEE2017",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=True)
+   jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear="UL2017",runPeriod="B",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=False)
+   jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear="UL2017",runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=False)
 
 if args.year=='2018':
-   jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear=2018,runPeriod="A",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=True,splitJER=True)
-   jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear=2018,runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=True,splitJER=True)
+   jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear="UL2018",runPeriod="A",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=True,splitJER=False)
+   jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear="UL2018",runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=True,splitJER=False)
 
 # classify input files
 if args.infile:
@@ -62,6 +66,8 @@ if args.isdata:
        Modules = [countHistogramsModule(),jmeCorrections_ak4_Data(),WWGfakelepton_Module()]
 else:
        if args.year=='2016':
+          Modules = [countHistogramsModule(),WWGfakelepton_Module(),jmeCorrections_ak4_MC(),puWeight_UL2016()]
+       if args.year=='2016pre':
           Modules = [countHistogramsModule(),WWGfakelepton_Module(),jmeCorrections_ak4_MC(),puWeight_UL2016()]
        if args.year=='2017':
           Modules = [countHistogramsModule(),WWGfakelepton_Module(),jmeCorrections_ak4_MC(),puWeight_UL2017()]

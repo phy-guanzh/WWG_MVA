@@ -140,7 +140,7 @@ class WWG_Producer(Module):
                 tight_muons.append(i)
                 muons_select.append(i)
                 muon_pass += 1
-	    elif muons[i].tightId == True and muons[i].pfRelIso04_all < 0.25:
+	    elif muons[i].looseId == True and muons[i].pfRelIso04_all < 0.4:
                  loose_but_not_tight_muons.append(i)
                  muons_select.append(i)
                  muon_pass += 1

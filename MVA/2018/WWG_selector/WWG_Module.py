@@ -140,15 +140,15 @@ class WWG_Producer(Module):
                 continue
             if abs(muons[i].eta) > 2.4:
                 continue
-            if muons[i].mediumId == True and muons[i].mvaTTH > 0.4 and muons[i].miniPFRelIso_all <= 0.2:
+            if muons[i].mediumId == True and muons[i].mvaTTH > -0.2 and muons[i].miniPFRelIso_all < 0.4:
                 tight_muons.append(i)
                 muons_select.append(i)
                 muon_pass += 1
-	    elif muons[i].mediumId == True and muons[i].mvaTTH < 0.4 and muons[i].miniPFRelIso_all < 0.4:
+	    elif muons[i].mediumId == True and muons[i].mvaTTH < -0.2 and muons[i].miniPFRelIso_all < 0.4:
                  loose_but_not_tight_muons.append(i)
                  muons_select.append(i)
                  muon_pass += 1
-            if muons[i].looseId == True and muons[i].pfRelIso04_all < 0.25:
+            if muons[i].looseId == True and muons[i].miniPFRelIso_all < 0.4:
                 loose_muon_pass += 1
 
         # selection on electrons
@@ -280,7 +280,7 @@ class WWG_Producer(Module):
         lep1_is_tight=-10
         lep2_is_tight=-10
         if len(muons_select)==1 and len(electrons_select)==1:  # emu channel 
-            if muons[muons_select[0]].mediumId == True and muons[muons_select[0]].mvaTTH > 0.4 and muons[muons_select[0]].miniPFRelIso_all <= 0.2:
+            if muons[muons_select[0]].mediumId == True and muons[muons_select[0]].mvaTTH > -0.2 and muons[muons_select[0]].miniPFRelIso_all < 0.4:
                lep1_is_tight=1
             if electrons[electrons_select[0]].mvaFall17V2Iso_WP80==True:
 	       lep2_is_tight=1

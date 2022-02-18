@@ -2,7 +2,7 @@ from WMCore.Configuration import Configuration
 
 config = Configuration()
 config.section_("General")
-config.General.requestName = "ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_2018"
+config.General.requestName = "ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_2018_mva"
 config.General.transferLogs = False 
 config.General.workArea = "crab2018"
 
@@ -28,5 +28,5 @@ config.Data.allowNonValidInputDataset = True
 config.Data.outputDatasetTag = "ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_2018" 
 
 config.section_("Site")
-config.Site.storageSite = "T2_CH_CERN"
+config.Site.storageSite = "T3_CH_CERNBOX"
 config.Site.whitelist = ["T2_US_MIT","T2_US_Wisconsin","T2_US_Purdue","T2_US_UCSD","T2_US_Caltech","T2_US_Nebraska"] 

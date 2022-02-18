@@ -19,7 +19,7 @@ parser.add_argument('-f', dest='infile', default='', help='local file input')
 parser.add_argument('-y', dest='year', default='2016', help='year of dataset')
 parser.add_argument('-m', dest='mode', default='local', help='runmode local/condor')
 parser.add_argument('-d', dest='isdata',action='store_true',default=False)
-parser.add_argument('-e', dest='era',default='A')
+parser.add_argument('-e', dest='era',default='B')
 args = parser.parse_args()
 
 print "mode: ", args.mode
@@ -31,16 +31,28 @@ from PhysicsTools.NanoAODTools.postprocessing.modules.btv.btagSFProducer import 
 from PhysicsTools.NanoAODTools.postprocessing.modules.common.PrefireCorr import *
 
 if args.year=='2016':
-   jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear=2016,runPeriod="B",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=True)
-   jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear=2016,runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=True)
+   jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear="UL2016",runPeriod="B",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=False)
+   jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear="UL2016",runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=False)
+   btagSF_csv  = lambda: btagSFProducer("Legacy2016",'deepcsv')
+   btagSF_deep = lambda: btagSFProducer("Legacy2016",'deepjet')
+
+if args.year=='2016pre':
+   jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear="UL2016_preVFP",runPeriod="B",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=False)
+   jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear="UL2016_preVFP",runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=False)
+   btagSF_csv  = lambda: btagSFProducer("Legacy2016",'deepcsv')
+   btagSF_deep = lambda: btagSFProducer("Legacy2016",'deepjet')
 
 if args.year=='2017':
-   jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear=2017,runPeriod="B",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="METFixEE2017",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=True)
-   jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear=2017,runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="METFixEE2017",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=True)
+   jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear="UL2017",runPeriod="B",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=False)
+   jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear="UL2017",runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=False,splitJER=False)
+   btagSF_csv = lambda: btagSFProducer("UL2017",'deepcsv')
+   btagSF_deep = lambda: btagSFProducer("UL2017",'deepjet')
 
 if args.year=='2018':
-   jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear=2018,runPeriod="A",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=True,splitJER=True)
-   jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear=2018,runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=True,splitJER=True)
+   jmeCorrections_ak4_MC = createJMECorrector(isMC=True,dataYear="UL2018",runPeriod="A",jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=True,splitJER=False)
+   jmeCorrections_ak4_Data = createJMECorrector(isMC=False,dataYear="UL2018",runPeriod=args.era,jesUncert="Total",jetType="AK4PFchs",noGroom=False,metBranchName="MET",applySmearing=True,isFastSim=False,applyHEMfix=True,splitJER=False)
+   btagSF_csv = lambda: btagSFProducer("UL2018",'deepcsv')
+   btagSF_deep = lambda: btagSFProducer("UL2018",'deepjet')
 
 # classify input files
 if args.infile:
@@ -62,11 +74,13 @@ if args.isdata:
        Modules = [countHistogramsModule(),jmeCorrections_ak4_Data(),WWG_Module()]
 else:
        if args.year=='2016':
-          Modules = [countHistogramsModule(),WWG_Module(),jmeCorrections_ak4_MC(),puWeight_UL2016()]
+          Modules = [countHistogramsModule(),WWG_Module(),jmeCorrections_ak4_MC(),puWeight_UL2016(),btagSF_csv(),btagSF_deep()]
+       if args.year=='2016pre':
+          Modules = [countHistogramsModule(),WWG_Module(),jmeCorrections_ak4_MC(),puWeight_UL2016(),btagSF_csv(),btagSF_deep()]
        if args.year=='2017':
-          Modules = [countHistogramsModule(),WWG_Module(),jmeCorrections_ak4_MC(),puWeight_UL2017()]
+          Modules = [countHistogramsModule(),WWG_Module(),jmeCorrections_ak4_MC(),puWeight_UL2017(),btagSF_csv(),btagSF_deep()]
        if args.year=='2018':
-          Modules = [countHistogramsModule(),WWG_Module(),jmeCorrections_ak4_MC(),puWeight_UL2018()]
+          Modules = [countHistogramsModule(),WWG_Module(),jmeCorrections_ak4_MC(),puWeight_UL2018(),btagSF_csv(),btagSF_deep()]
 
 if args.isdata and args.year=='2018' and args.era=='D' and 'MuonEG' in args.infile:
 

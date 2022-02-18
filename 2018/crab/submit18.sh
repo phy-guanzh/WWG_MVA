@@ -4,11 +4,11 @@ crab submit -c crabcode_2018/EGamma_Run2018A_cfg.py
 crab submit -c crabcode_2018/EGamma_Run2018B_cfg.py
 crab submit -c crabcode_2018/EGamma_Run2018C_cfg.py
 crab submit -c crabcode_2018/EGamma_Run2018D_cfg.py
-crab submit -c crabcode_2018/GluGluHToWWTo2L2Nu_M125_TuneCP5_13TeV_powheg2_JHUGenV714_pythia8_2018_cfg.py
-crab submit -c crabcode_2018/MET_Run2018A_cfg.py
-crab submit -c crabcode_2018/MET_Run2018B_cfg.py
-crab submit -c crabcode_2018/MET_Run2018C_cfg.py
-crab submit -c crabcode_2018/MET_Run2018D_cfg.py
+#crab submit -c crabcode_2018/GluGluHToWWTo2L2Nu_M125_TuneCP5_13TeV_powheg2_JHUGenV714_pythia8_2018_cfg.py
+#crab submit -c crabcode_2018/MET_Run2018A_cfg.py
+#crab submit -c crabcode_2018/MET_Run2018B_cfg.py
+#crab submit -c crabcode_2018/MET_Run2018C_cfg.py
+#crab submit -c crabcode_2018/MET_Run2018D_cfg.py
 crab submit -c crabcode_2018/MuonEG_Run2018A_cfg.py
 crab submit -c crabcode_2018/MuonEG_Run2018B_cfg.py
 crab submit -c crabcode_2018/MuonEG_Run2018C_cfg.py

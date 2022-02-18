@@ -27,7 +27,7 @@ def prepare_crab(name,sample_type,year,era):
 
         f.write('config = Configuration()\n')
         f.write('config.section_("General")\n')
-        f.write('config.General.requestName = "' + abbre_name + '"\n')
+        f.write('config.General.requestName = "' + abbre_name + '_mva"\n')
         f.write('config.General.transferLogs = False \n')
         f.write('config.General.workArea = "crab' + year + '"\n\n')
 
@@ -70,7 +70,7 @@ def prepare_crab(name,sample_type,year,era):
         f.write('config.Data.outputDatasetTag = "' + abbre_name + '" \n\n')
 
         f.write('config.section_("Site")\n')
-        f.write('config.Site.storageSite = "T2_CH_CERN"\n')
+        f.write('config.Site.storageSite = "T3_CH_CERNBOX"\n')
         f.write('config.Site.whitelist = ["T2_US_MIT","T2_US_Wisconsin","T2_US_Purdue","T2_US_UCSD","T2_US_Caltech","T2_US_Nebraska"] \n')
         f.close()
 

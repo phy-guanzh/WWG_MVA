@@ -27,7 +27,7 @@ def prepare_crab(name,sample_type,year,era):
 
         f.write('config = Configuration()\n')
         f.write('config.section_("General")\n')
-        f.write('config.General.requestName = "' + abbre_name + '"\n')
+        f.write('config.General.requestName = "' + abbre_name + '_mva"\n')
         f.write('config.General.transferLogs = False \n')
         f.write('config.General.workArea = "crab' + year + '"\n\n')
 
@@ -35,7 +35,7 @@ def prepare_crab(name,sample_type,year,era):
         f.write('config.JobType.pluginName = "Analysis"\n')
         f.write('config.JobType.psetName = "PSet.py"\n')
         f.write('config.JobType.scriptExe = "./WWG_crab_script.sh" \n')
-        f.write('config.JobType.inputFiles = ["../../../../scripts/haddnano.py","../WWG_fakelepton/WWG_postproc.py","../WWG_fakelepton/WWGfakelepton_Module.py","../WWG_fakelepton/WWG_keep_and_drop.txt","../WWG_fakelepton/WWG_output_branch.txt","../WWG_fakelepton/DAS_filesearch.py"] #hadd nano will not be needed once nano tools are in cmssw \n')
+        f.write('config.JobType.inputFiles = ["../../../../scripts/haddnano.py","../WWG_selector/WWG_postproc.py","../WWG_selector/WWG_Module.py","../WWG_selector/WWG_keep_and_drop.txt","../WWG_selector/WWG_output_branch.txt","../WWG_selector/DAS_filesearch.py"] #hadd nano will not be needed once nano tools are in cmssw \n')
 #	f.write('config.JobType.scriptArgs = ["isdata=' + sample_type + '","year=' + year + '","era=' + era + '"] \n')
         f.write('config.JobType.scriptArgs = ["isdata=' + sample_type + '","year=' + year + '","era=' + era + '"] \n')
         f.write('config.JobType.sendPythonFolder  = True\n')
@@ -43,10 +43,9 @@ def prepare_crab(name,sample_type,year,era):
 
         f.write('config.section_("Data")\n')
         f.write('config.Data.inputDataset = "' + name + '" \n')
-        f.write('#config.Data.inputDBS = "phys03"\n')
         f.write('config.Data.inputDBS = "global"\n')
-        f.write('#config.Data.splitting = "FileBased"\n')
-        f.write('#config.Data.unitsPerJob = 1\n')
+        f.write('# config.Data.splitting = "FileBased"\n')
+        f.write('# config.Data.unitsPerJob = 1\n')
 
         if sample_type == 'MC':
            f.write('config.Data.splitting = "FileBased"\n')
@@ -71,7 +70,7 @@ def prepare_crab(name,sample_type,year,era):
         f.write('config.Data.outputDatasetTag = "' + abbre_name + '" \n\n')
 
         f.write('config.section_("Site")\n')
-        f.write('config.Site.storageSite = "T2_CH_CERN"\n')
+        f.write('config.Site.storageSite = "T3_CH_CERNBOX"\n')
         f.write('config.Site.whitelist = ["T2_US_MIT","T2_US_Wisconsin","T2_US_Purdue","T2_US_UCSD","T2_US_Caltech","T2_US_Nebraska"] \n')
         f.close()
 

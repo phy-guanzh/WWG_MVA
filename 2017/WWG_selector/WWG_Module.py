@@ -140,7 +140,7 @@ class WWG_Producer(Module):
                 tight_muons.append(i)
                 muons_select.append(i)
                 muon_pass += 1
-	    elif muons[i].tightId == True and muons[i].pfRelIso04_all < 0.25:
+	    elif muons[i].looseId == True and muons[i].pfRelIso04_all < 0.4:
                  loose_but_not_tight_muons.append(i)
                  muons_select.append(i)
                  muon_pass += 1
@@ -262,9 +262,10 @@ class WWG_Producer(Module):
 #            return True
 
         isprompt_mask = (1 << 0) #isPrompt used for lepton
-        isdirectprompttaudecayproduct_mask = (1 << 5) #isDirectPromptTauDecayProduct used for photon
         isprompttaudecayproduct = (1 << 3) #isPromptTauDecayProduct used for lepton
+        isdirectprompttaudecayproduct_mask = (1 << 5) #isDirectPromptTauDecayProduct used for photon
         isfromhardprocess_mask = (1 << 8) #isPrompt  used for photon
+        isfromHardProcessBeforeFSR_mask = (1 << 11) #isPrompt  used for photon
 
         channel = 0 
         # emu:     1
@@ -336,11 +337,11 @@ class WWG_Producer(Module):
                        photon_gen_matching = 6
                    elif ((genparts[photons[photon_index].genPartIdx].statusFlags & isprompt_mask == isprompt_mask) or (genparts[photons[photon_index].genPartIdx].statusFlags & isdirectprompttaudecayproduct_mask == isdirectprompttaudecayproduct_mask)):       
                        if (genparts[photons[photon_index].genPartIdx].genPartIdxMother >= 0 and (abs(genparts[genparts[photons[photon_index].genPartIdx].genPartIdxMother].pdgId) == 11 or abs(genparts[genparts[photons[photon_index].genPartIdx].genPartIdxMother].pdgId) == 13 or abs(genparts[genparts[photons[photon_index].genPartIdx].genPartIdxMother].pdgId) == 15)):
-                           photon_gen_matching = 4
+                           photon_gen_matching = 4 # from electron/muon/tau
                        else:    
-                           photon_gen_matching = 5
+                           photon_gen_matching = 5 # from other partilece (boson?)
                    else:
-                       photon_gen_matching = 3
+                       photon_gen_matching = 3 # not a prompt photon
                elif photons[photon_index].genPartIdx >= 0 and abs(genparts[photons[photon_index].genPartIdx].pdgId) == 11:     
                    if ((genparts[photons[photon_index].genPartIdx].statusFlags & isprompt_mask == isprompt_mask) or (genparts[photons[photon_index].genPartIdx].statusFlags & isdirectprompttaudecayproduct_mask == isdirectprompttaudecayproduct_mask)):  
                        photon_gen_matching = 1
