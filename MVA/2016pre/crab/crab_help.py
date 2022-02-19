@@ -43,21 +43,28 @@ def prepare_crab(name,sample_type,year,era):
 
         f.write('config.section_("Data")\n')
         f.write('config.Data.inputDataset = "' + name + '" \n')
-        f.write('#config.Data.inputDBS = "phys03"\n')
         f.write('config.Data.inputDBS = "global"\n')
-        f.write('# config.Data.splitting = "LumiBased"\n')
-        f.write('config.Data.splitting = "FileBased"\n')
-        f.write('#config.Data.splitting = "EventAwareLumiBased" \n')
-        f.write('#config.Data.splitting = "Automatic" \n')
-        f.write('config.Data.unitsPerJob = 1\n')
+        f.write('# config.Data.splitting = "FileBased"\n')
+        f.write('# config.Data.unitsPerJob = 1\n')
 
         if sample_type == 'MC':
-            pass
+           f.write('config.Data.splitting = "FileBased"\n')
+           f.write('config.Data.unitsPerJob = 1\n')
         elif year == '2018':
+            f.write('config.Data.splitting = "LumiBased"\n')
+            f.write('config.Data.unitsPerJob = 50\n')
             f.write('config.Data.lumiMask = "/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions18/13TeV/Legacy_2018/Cert_314472-325175_13TeV_Legacy2018_Collisions18_JSON.txt" \n\n')
         elif year == '2017':
+            f.write('config.Data.splitting = "LumiBased"\n')
+            f.write('config.Data.unitsPerJob = 50\n')
             f.write('config.Data.lumiMask = "/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions17/13TeV/Legacy_2017/Cert_294927-306462_13TeV_UL2017_Collisions17_GoldenJSON.txt" \n\n')
         elif year == '2016':
+            f.write('config.Data.splitting = "LumiBased"\n')
+            f.write('config.Data.unitsPerJob = 50\n')
+            f.write('config.Data.lumiMask = "/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions16/13TeV/Legacy_2016/Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON.txt" \n\n')
+        elif year == '2016pre':
+            f.write('config.Data.splitting = "LumiBased"\n')
+            f.write('config.Data.unitsPerJob = 50\n')
             f.write('config.Data.lumiMask = "/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions16/13TeV/Legacy_2016/Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON.txt" \n\n')
 
 #        f.write('config.Data.outLFNDirBase ="/store/user/sdeng/WWG_analysis/' + sample_type + '/' + year + '"\n')
