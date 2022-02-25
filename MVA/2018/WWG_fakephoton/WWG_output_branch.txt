@@ -14,7 +14,6 @@ keep *njets*
 keep n*
 keep *ll*
 keep *met*
-keep mt
 
 # keep NanoAOD initiated variables below for further test
 keep *

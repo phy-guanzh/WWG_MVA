@@ -177,7 +177,8 @@ class WWG_Producer(Module):
         channel=-10
         photon_selection=-10
         if len(muons_select) == 2 and len(electrons_select)==0:
-	    if len(muons_select) == 2:
+	    channel=1
+            if len(muons_select) == 2:
                 muon_index1 = muons_select[0]
                 muon_index2 = muons_select[1]
                 self.out.fillBranch("is_lepton_tight",1)
@@ -213,7 +214,7 @@ class WWG_Producer(Module):
             #if njets <1 :
             #   return False
             self.out.fillBranch("n_bjets",n_bjets)
-            self.out.fillBranch("channel",1) # muon-muon channel
+            self.out.fillBranch("channel",channel) # muon-muon channel
             self.out.fillBranch("lepton1_pt",muons[muon_index1].pt)
             self.out.fillBranch("lepton2_pt",muons[muon_index2].pt)
             self.out.fillBranch("lepton1_eta",muons[muon_index1].eta)
@@ -235,6 +236,7 @@ class WWG_Producer(Module):
             self.out.fillBranch("puppimet",event.PuppiMET_pt)
 	elif (len(electrons_select)  == 2) and (len(muons_select)  == 0):
 
+	    channel=2
             if len(electrons_select) == 2:
                 electron_index1 = electrons_select[0]
                 electron_index2 = electrons_select[1]
@@ -273,7 +275,7 @@ class WWG_Producer(Module):
             #if njets <1 :
             #   return False
             self.out.fillBranch("n_bjets",n_bjets)
-            self.out.fillBranch("channel",2) #electron-electron channel
+            self.out.fillBranch("channel",channel) #electron-electron channel
             self.out.fillBranch("lepton1_pt",electrons[electron_index1].pt)
             self.out.fillBranch("lepton2_pt",electrons[electron_index2].pt)
             self.out.fillBranch("lepton1_eta",electrons[electron_index1].eta)
@@ -302,10 +304,10 @@ class WWG_Producer(Module):
         photon_isprompt =-10
         if photon_pass>0:
            for j in range(0,len(photons_select)):
-               if channel==1 and deltaR(photons[photons_select[j]].eta,photons[photons_select[j]].phi,muons[muons_select[0]].eta,muons[muons_select[0]].phi) > 0.5 and deltaR(photons[photons_select[j]].eta,photons[photons_select[j]].phi,muons[muons_select[1]].eta,muons[muons_select[2]].phi) > 0.5:
-                  photon_index=photons_select[j] 
+               if channel==1 and deltaR(photons[photons_select[j]].eta,photons[photons_select[j]].phi,muons[muons_select[0]].eta,muons[muons_select[0]].phi) > 0.5 and deltaR(photons[photons_select[j]].eta,photons[photons_select[j]].phi,muons[muons_select[1]].eta,muons[muons_select[1]].phi) > 0.5:
+                  photon_index=photons_select[j]
                   break
-               elif channel==2 and deltaR(photons[photons_select[j]].eta,photons[photons_select[j]].phi,electrons[electrons_select[0]].eta,electrons[electrons_select[0]].phi) > 0.5 and deltaR(photons[photons_select[j]].eta,photons[photons_select[j]].phi,electrons[electrons_select[0]].eta,electrons[electrons_select[0]].phi) > 0.5:
+               elif channel==2 and deltaR(photons[photons_select[j]].eta,photons[photons_select[j]].phi,electrons[electrons_select[0]].eta,electrons[electrons_select[0]].phi) > 0.5 and deltaR(photons[photons_select[j]].eta,photons[photons_select[j]].phi,electrons[electrons_select[1]].eta,electrons[electrons_select[1]].phi) > 0.5:
                   photon_index=photons_select[j] 
                   break
                else:
@@ -346,14 +348,18 @@ class WWG_Producer(Module):
         
 	   bitmap = photons[photon_index].vidNestedWPBitmap & mask1   
            if (bitmap == mask1):
+               photon_selection=1
                self.out.fillBranch("photon_selection",1) #all cuts applied
+               print ' channel',channel,'photon_selection ',photon_selection,' the number of jets ',njets,' chiso ',photons[photon_index].pfRelIso03_chg,'-> this event is saved'
            #elif (bitmap == mask2):
            #    self.out.fillBranch("photon_selection",2) # fail Isopho
            #elif (bitmap == mask3):
            #    self.out.fillBranch("photon_selection",3) # fail IsoNeu
            elif (bitmap == mask4):
+               photon_selection=4
                self.out.fillBranch("photon_selection",4) # fail Isoch
            elif (bitmap == mask5):
+               photon_selection=5
                self.out.fillBranch("photon_selection",5) # fail sigma ieie
 	   else:
                assert(0)
@@ -367,17 +373,18 @@ class WWG_Producer(Module):
                self.out.fillBranch("photoneta",photons[photon_index].eta)
                self.out.fillBranch("photonphi",photons[photon_index].phi)
                self.out.fillBranch("photonsieie",photons[photon_index].sieie)
+               print ' channel',channel,'photon_selection ',photon_selection,' the number of jets ',njets,' chiso ',photons[photon_index].pfRelIso03_chg,'-> this event is saved'
            elif channel ==2:
 	       self.out.fillBranch("drl1a",deltaR(photons[photon_index].eta,photons[photon_index].phi,electrons[electrons_select[0]].eta,electrons[electrons_select[0]].phi))
 	       self.out.fillBranch("drl2a",deltaR(photons[photon_index].eta,photons[photon_index].phi,electrons[electrons_select[1]].eta,electrons[electrons_select[1]].phi))
-               self.out.fillBranch("mllg",(muons[muons_select[0]].p4() + electrons[electrons_select[1]].p4()+photons[photon_index].p4()).M())
+               self.out.fillBranch("mllg",(electrons[electrons_select[0]].p4() + electrons[electrons_select[1]].p4()+photons[photon_index].p4()).M())
                self.out.fillBranch("photonchiso",photons[photon_index].pfRelIso03_chg)
 	       self.out.fillBranch("photonet",photons[photon_index].pt)
                self.out.fillBranch("photoneta",photons[photon_index].eta)
                self.out.fillBranch("photonphi",photons[photon_index].phi)
                self.out.fillBranch("photonsieie",photons[photon_index].sieie)
           # self.out.fillBranch("mllg",(muons[muons_select[0]].p4() + electrons[electrons_select[0]].p4()+photons[photon_index].p4()).M())
-           print ' channel',channel,'photon_selection ',photon_selection,' the number of jets ',njets,' chiso ',photons[photon_index].pfRelIso03_chg,'-> this event is saved'
+               print ' channel',channel,'photon_selection ',photon_selection,' the number of jets ',njets,' chiso ',photons[photon_index].pfRelIso03_chg,'-> this event is saved'
         else:
            self.out.fillBranch("photon_selection",0) #if there is no photons selected
            self.out.fillBranch("drl1a",-10)
